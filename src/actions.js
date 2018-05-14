@@ -1,9 +1,9 @@
 import axios from 'axios';
-import { PRODUCT_LIST } from './constants';
+import { API_URL } from './constants';
 
 const loadProducts = () => {
   return dispatch => {
-    axios.get(PRODUCT_LIST)
+    axios.get(`${API_URL}products`)
       .then(response => {
         dispatch({
           type: "REPLACE_PRODUCTS",
