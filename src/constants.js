@@ -1,5 +1,5 @@
-export const API_URL = "http://localhost/truebase.io/api/v1/";
-export const REMOVE_URL = `${API_URL}remove`;
-export const CREATE_URL = `${API_URL}create`;
-export const RENAME_URL = `${API_URL}rename`;
-export const LIST_FOLDER_URL = `${API_URL}listFolder`;
+export const API_URL = "http://sharesmarttv.com/azumo/api/v1/";
+export const CREATE_PRODUCT = `${API_URL}create`;
+export const UPDATE_PRODUCT = `${API_URL}update`;
+export const REMOVE_PRODUCT = `${API_URL}remove`;
+export const PRODUCT_LIST = `${API_URL}products`;

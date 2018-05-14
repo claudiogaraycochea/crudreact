@@ -1,8 +1,9 @@
 import axios from 'axios';
+import { PRODUCT_LIST } from './constants';
 
 const loadProducts = () => {
   return dispatch => {
-    axios.get("http://sharesmarttv.com/azumo/api/v1/products")
+    axios.get(PRODUCT_LIST)
       .then(response => {
         dispatch({
           type: "REPLACE_PRODUCTS",
