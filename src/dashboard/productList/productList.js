@@ -7,6 +7,7 @@ class ProductList extends Component {
   render(){
     return <div>
       <h1>ProductList</h1>
+      <div>Text: {this.props.text}</div>
       <div className="product-wrapper">
         {this.props.products.map(product =>
           <div className="item" key={product.id}>
@@ -27,7 +28,8 @@ class ProductList extends Component {
 
 const mapStateToProps = state => {
   return {
-    products: state.products
+    products: state.products,
+    text: state.text
   }
 }
 

@@ -7,6 +7,11 @@ const reducer = (state, action) => {
       ...state,
       products: action.products
     }
+  } else if (action.type === "PRODUCT_RESPONSE") {
+    return {
+      ...state,
+      text: action.text
+    }
   } else if (action.type === "ADD_TO_CART") {
     return {
       ...state,

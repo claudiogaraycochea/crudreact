@@ -8,7 +8,13 @@ const loadProducts = () => {
         dispatch({
           type: "REPLACE_PRODUCTS",
           products: response.data
-        })
+        });
+      })
+      .catch(error => {
+        dispatch({
+          type: "PRODUCT_RESPONSE",
+          text: "Error in network :( Please try later."
+        });
       });
   };
 };
