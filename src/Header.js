@@ -19,7 +19,7 @@ class Header extends Component {
         <header>
           <nav>
             <div className="nav-logo">
-              Logo
+              Logo Demo
             </div>
             <Navigation/>
             <div className="clearfix"></div>
